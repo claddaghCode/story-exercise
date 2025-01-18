@@ -1,0 +1,29 @@
+{
+  "name": "e2e",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "story-exercise:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "story-exercise:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "story-exercise:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["story-exercise"]
+}
