@@ -74,3 +74,18 @@ It will show tasks that you can run with Nx.
 - [Join the community](https://nx.dev/community)
 - [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
+
+# Steps to Analyze an Angular Component for Storybook
+
+| Step | Description                                                                                           |
+|------|-------------------------------------------------------------------------------------------------------|
+| 1    | **Understand the Component's Purpose**: Identify the component's functionality and role in the app.   |
+| 2    | **Examine the Component's Inputs**: List `@Input()` properties, their types, default values, and ranges/options. |
+| 3    | **Identify Outputs and Events**: Review `@Output()` properties and understand their emitted events.    |
+| 4    | **Inspect Methods**: Analyze public methods and their impact on the component's behavior or state.    |
+| 5    | **Analyze Styling and Classes**: Check dynamic CSS classes and styling inputs like `backgroundColor`.  |
+| 6    | **Review the Template**: Examine the HTML for conditional rendering, child components, and logic.      |
+| 7    | **Plan Stories Based on Component States**: Identify possible states and variations to showcase in Storybook. |
+| 8    | **Write Stories for Each Variation**: Create stories to demonstrate the component's functionality and states. |
+| 9    | **Test Stories in Storybook**: Verify each story renders correctly and logs events in the Actions Panel. |
+
