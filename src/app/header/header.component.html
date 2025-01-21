@@ -16,11 +16,11 @@
                 <span class="welcome">
                     Welcome, <b>{{ user.name }}</b>!
                 </span>
-                <storybook-button [size]="ButtonSize.Small" (clicked)="clickLogout.emit($event)" label="Log out"></storybook-button>
+                <storybook-button size="small" (clicked)="clickLogout.emit($event)" label="Log out"></storybook-button>
             } @else {
-                <storybook-button [size]="ButtonSize.Small" class="margin-left" (clicked)="clickLogin.emit($event)"
+                <storybook-button size="small" class="margin-left" (clicked)="clickLogin.emit($event)"
                     label="Log in"></storybook-button>
-                <storybook-button [size]="ButtonSize.Small" [primary]="true" class="margin-left"
+                <storybook-button size="small" [primary]="true" class="margin-left"
                     (clicked)="clickCreateAccount.emit($event)" label="Sign up"></storybook-button>
 
             }

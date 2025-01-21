@@ -1,12 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-export enum ButtonSize {
-  Small = 'small',
-  Medium = 'medium',
-  Large = 'large',
-}
-
 @Component({
   selector: 'storybook-button',
   standalone: true,
@@ -36,7 +30,7 @@ export default class ButtonComponent {
   /**
    * How large should the button be?
    */
-  @Input() size: ButtonSize = ButtonSize.Medium;
+  @Input() size: 'small' | 'medium' | 'large' = 'medium';
 
   /**
    * Button contents

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import type { User } from '../utils/User.model';
-import ButtonComponent, { ButtonSize } from "../button/button.component";
+import ButtonComponent from "../button/button.component";
 
 @Component({
   selector: 'storybook-header',
@@ -18,6 +18,5 @@ export default class HeaderComponent {
   @Output() clickLogout = new EventEmitter<Event>();
 
   @Output() clickCreateAccount = new EventEmitter<Event>();
-  
-  ButtonSize = ButtonSize; // Make the enum accessible in the template
+
 }

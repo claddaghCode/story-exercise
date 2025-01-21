@@ -8,16 +8,14 @@ import { PageComponent } from './page.component';
 import ButtonComponent from '../button/button.component';
 import HeaderComponent from '../header/header.component';
 
+
 // Storybook metadata configuration
 export default {
   title: 'Example/Page',
   component: PageComponent,
-  parameters: {
-    layout: 'fullscreen', // Story layout
-  },
   decorators: [
     moduleMetadata({
-      imports: [CommonModule, ButtonComponent, HeaderComponent], // Import necessary modules and components
+      imports: [CommonModule, ButtonComponent, HeaderComponent], // Import req'd modules and components
       schemas: [CUSTOM_ELEMENTS_SCHEMA], // Allow custom elements
     }),
   ],
